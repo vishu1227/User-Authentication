@@ -1,8 +1,10 @@
-html
-    head
-        title Login
-    body
-        form(action="", method="post")
-            input(type="email", name="Username",placeholder='Enter email')
-            input(type="password", name="pword",placeholder='Enter password')
-            button(type="submit",value='Submit')
+doctype html
+head
+  title Login
+form(action='/cart/login' method='post')
+  input(type='email' name='' id='' placeholder='Enter your email')
+  br
+  input(type='password' name='' id='' placeholder='Enter password')
+  br
+  button(type='submit') Login
+a(href='#') Register
