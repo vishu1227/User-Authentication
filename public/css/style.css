@@ -7,7 +7,12 @@ html{
     scroll-behavior: smooth;
 }
 /* Left Slide */
-
+#innerImg{
+    /* content: url('../images/user_img.jpg'); */
+    /* width:12vw;
+    height: 12vh; */
+    background-size: 12vw 12 vw;
+}
 #leftSlide{
     position: fixed;
     z-index: 1;
@@ -45,6 +50,12 @@ html{
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+    background-image: url('../images/user_img.jpg');
+    background-repeat: no-repeat;
+    background-size: 12vw 12vw;
+    height: 12vw;
+    width: 12vw;
+    border-radius: 50%;
 }
 #user_img img{
     width: 12vw;
@@ -80,6 +91,10 @@ html{
     position: absolute;
     bottom: 0px;
     height: fit-content;
+    left: 40px;
+}
+#copyrights p{
+    text-align: center;
 }
 
 /* Right Slide */

@@ -3,17 +3,23 @@ const app=express()
 const path=require('path')
 
 app.use('/',express.static(path.join(__dirname,'./public')))
+app.use(express.urlencoded())
+
 app.set('view engine','pug')
-app.set('views', path.join(__dirname, './views'));
+app.set('views', path.join(__dirname, 'views'));
 
 
 app.get('/',(req,res)=>{
     res.render('index');
 })
 
-app.listen(3000,()=>{
-    console.log('Yes the server is live!');
+app.listen(8000,(err)=>{
+    
+    if(err)
+    {
+        console.log('err');
+        return;
+    }
+    console.log('Server is live!')
 })
 
-// public/css/mobile.css
-// /home/bharat/Desktop/Projects/User_Authentication/public/css/mobile.css

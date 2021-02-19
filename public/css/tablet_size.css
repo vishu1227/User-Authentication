@@ -1,3 +1,5 @@
+@media screen and (min-width: 460px) and (max-width: 690px){
+
 .product{
     height: fit-content;
     width: fit-content;
@@ -56,4 +58,5 @@ nav button{
 }
 .cart-product{
     width: fit-content;
+}
 }

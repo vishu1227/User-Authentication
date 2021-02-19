@@ -7,14 +7,16 @@ function openLeftSide()
     if(screen.width<460)
     {
         Slide.style.width='205px'
+        document.getElementById('user_img').style.width='300px'
+        document.getElementById('user_img').style.height='300px'    
     }
     else{
         Slide.style.width='260px'
     }
     Slide.style.display='block'
 
-    let img=document.getElementById('innerImg')
-    img.style.width='100px'
+    document.getElementById('user_img').style.width='12vw'
+    document.getElementById('user_img').style.height='12vw'
 
     let Cbtn=document.getElementById('closebutton')
     Cbtn.style.display='block'
@@ -30,8 +32,11 @@ function closeSLideBar()
     let Slide=document.getElementById('leftSlide')
     Slide.style.width='0vw'
 
-    let img=document.getElementById('innerImg')
-    img.style.width='0vw'
+    document.getElementById('user_img').style.width='0px'
+    document.getElementById('user_img').style.height='0px'
+
+    // let img=document.getElementById('innerImg')
+    // img.style.width='0vw'
 
     let Cbtn=document.getElementById('closebutton')
     Cbtn.style.display='none'
