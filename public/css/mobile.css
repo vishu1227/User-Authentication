@@ -1,0 +1,135 @@
+/* Nav bar */
+nav{
+    padding-top: 7px;
+}
+nav::before{
+    height: 40px;
+}
+nav button{
+    margin-left: 1%;
+}
+.Cart{
+    margin-right: 1%;
+    font-size: 0.8em;
+}
+.Cart svg{
+    height: 1em;
+    width: 1em;
+}
+.Cart i{
+    margin-left: 2px;
+    padding: none;
+}
+#heading{
+    text-align: left;
+    width: fit-content;
+    margin-left: 25px;
+}
+
+/* Left slide */
+
+#leftSlide a{
+    font-size: 0.7em;
+}
+#copyrights p{
+    width: fit-content;
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    margin-left: 45px;
+    margin-right: auto;
+}
+#leftSlide button svg{
+    fill: white;
+    background-color: orange;
+}
+
+/* Right Slide */
+#RightSlide{
+    padding-right: 0px;
+    font-size: 0.7em;
+    width: fit-content;
+}
+#cart-title{
+    font-size: 15px;
+}
+.details{
+    width: 90px;
+    padding-top: 0px;
+}
+.incr_decr{
+    margin-left: 20px;
+}
+.cart-product img{
+    height: 25%;
+    width: 30%;
+}
+.cart-product{
+    width: fit-content;
+}
+.totalcost{
+    /* margin-left: 3px; */
+    height: fit-content;
+    left: 10px;
+}
+.details button{
+    color: red;
+    cursor: pointer;
+}
+.incr_decr button svg{
+    fill: orange;
+}
+#close svg{
+    fill: white;
+    background-color: orange;
+}
+
+/* Welcome page */
+
+#heading{
+    font-size: 0.8em;
+}
+
+#shop_now h1{
+    font-size: 0.7em;
+}
+#shopNow a{
+    font-size: 0.7em;
+}
+#shop_now button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Products Display */
+
+.product{
+    height: fit-content;
+    width: fit-content;
+    font-size: 1em;
+}
+.product img{
+    height: 100%;
+    width: 100%;
+}
+.product p{
+    font-size: 0.8em;
+}
+#product_display h1{
+    font-size: 1em;
+}
+.product button{
+    font-size: 0.7em;
+}
+.product button svg{
+    height: 0.9em;
+    width: 0.9em;
+}
+
+#product_display{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.product:hover{
+    box-shadow: 0px 0px 0px -0px #999;
+}

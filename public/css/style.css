@@ -1,0 +1,422 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Lexend Mega', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Left Slide */
+
+#leftSlide{
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+#leftSlide button{
+    background-color: transparent;
+    border: none;
+    display: block;
+    position: relative;
+    margin: 10px;
+    margin-left: auto;
+}
+#leftSlide button:hover{
+    cursor: pointer;
+}
+#leftSlide button:focus{
+    outline: none;
+}
+#leftSlide button svg{
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+#leftSlide button svg:hover{
+    fill: white;
+    background-color: orange;
+}
+#user_img{
+    align-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+#user_img img{
+    width: 12vw;
+    border-radius: 50%;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#links a i{
+    position: relative;
+    bottom: 2px;
+    margin-left: 20px;
+}
+#links a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    /* border: 1px solid black; */
+    transition: all 0.2s;
+    background-color: rgb(255, 255, 255);
+}
+#links a:hover{
+    background-color: orange;
+    color: white;
+}
+#copyrights{
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    height: fit-content;
+}
+
+/* Right Slide */
+#all_items{
+    overflow-y: auto;
+    height: 500px;
+}
+#RightSlide{
+    width: 0vw;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    transition: all 0.4s;
+}
+#close{
+    background-color: transparent;
+    border: none;
+    display: block;
+    position: relative;
+    margin: 10px;
+    margin-left: 0px;
+}
+#close:hover{
+    cursor: pointer;
+}
+#close:focus{
+    outline: none;
+}
+#close svg{
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+#close svg:hover{
+    fill: white;
+    background-color: orange;
+}
+#cart-title{
+    text-align: center;
+}
+.cart-product{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cart-product img{
+    height: 80px;
+    width: 120px;
+}
+.cart-product{
+    display: flex;
+    flex-direction: row;
+}
+.details{
+    padding-top: 5px;
+    padding-left: 15px;
+    width: 200px;
+}
+.details p:nth-child(2){
+    color: orange;
+}
+.details button{
+    background-color: transparent;
+    border: none;
+    padding-top: 5px;
+}
+.details button:hover{
+    color: red;
+    cursor: pointer;
+}
+.details button:focus{
+    outline: none;
+}
+.total{
+    text-align: center;
+}
+.incr_decr{
+    /* padding-top: 5px; */
+    /* position: relative; */
+    margin-left: 70px;
+    right: 0px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+.incr_decr button{
+    height: fit-content;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+}
+.incr_decr button:focus{
+    outline: none;
+}
+.incr_decr button:hover{
+    cursor: pointer;
+}
+.incr_decr button:first-child{
+    position: relative;
+    top: 3px;
+}
+.incr_decr button svg{
+    height: 15px;
+    width: 15px;
+}
+.incr_decr button svg:hover{
+    fill: orange;
+}
+.incr_decr p{
+    align-self: center;
+    text-align: center;
+    align-content: center;
+}
+.totalcost{
+    width: 80px;
+}
+#emptycart{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 8px;
+    margin-top:10px;
+    background-color: orange;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+#emptycart:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Nav bar */
+nav{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: fixed;
+    width: 100vw;
+}
+
+nav::before{
+    content: '';
+    z-index: -1;
+    background-color: rgb(214, 214, 214);
+    height: 55px;
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+}
+
+nav button{
+    background-color: transparent;
+    border: none;
+    font-size: 21px;
+    margin-left: 11%;
+    /* size: ; */
+    z-index: 1;
+}
+nav button:hover{
+    cursor: pointer;
+}
+nav button:focus{
+    outline: none;
+}
+#heading{
+    position: absolute;
+    /* margin-left: 45vw; */
+    letter-spacing: .02em;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+#heading p span{
+    color: orange;
+}
+.openLeft:focus{
+    outline: none;
+}
+.openLeft:hover{
+    cursor: pointer;
+}
+.Cart{
+    float: right;
+    margin-left: auto;
+    margin-right: 12%;
+}
+.Cart i{
+    position: absolute;
+    top: 12%;
+    margin-left: 10px;
+    background-color: orange;
+    color: white;
+    height: 15px;
+    /* width: 20px; */
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 5px;
+}
+.Cart i p{
+    font-size: 12px;
+}
+
+
+/*Welcome page*/
+#welcome_page{
+
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    align-self: center;
+}
+#shop_now{
+    position: relative;
+    height: fit-content;
+    width: 42%;
+    top: 30%;
+    text-align: center;
+    /* Important point changing the background-color opactiy only */
+    background-color: rgb(255, 255, 255,0.7);
+    /* opacity: 0.7; */
+    font-size: 25px;
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto auto;
+}
+#shop_now button{
+
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    /* background-color: rgb(252, 167, 71); */
+    background-color: rgb(255, 165, 0);
+    border: none;
+    border: 0.5px solid black;
+    opacity: 1;
+    transition: transform 1s;
+    transform-origin: center;
+    text-decoration: none;
+}
+#shop_now button a{
+    color: black;
+    text-decoration: none;
+}
+
+#shop_now button a:hover{
+    color: white;
+    /* text-decoration: none; */
+    font-weight: bolder;
+}
+#shop_now button:focus{
+    outline: none;
+}
+#welcome_page::before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background: url('../images/hero-bcg.jpeg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.totalcost{
+    position: relative;
+    top: 25px;
+    left: 40px;
+}
+
+
+/* Product display */
+
+#product_display h1{
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 3.5%;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-wrap: wrap;
+    /* margin-left: 3.1%; */
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.product{
+    padding: 5px;
+    margin: 10px;
+    transition: box-shadow 0.2s;
+}
+.product:hover{
+    box-shadow: 6px 8px 6px -6px #999;
+}
+.product img{
+    height: 170px;
+    width: 240px;
+}
+.product img:hover{
+    cursor: pointer;
+}
+.product p{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.add_to_cart{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #dadada;
+    padding-top: 5px;
+}
+.add_to_cart button{
+    margin-left: auto;
+    border: 1px solid black;
+    background-color: orange;
+    padding:3px;
+    font-size: 15px;
+    text-align: center;
+    transition: color 0.2s;
+}
+.add_to_cart button:hover{
+    cursor: pointer;
+    color: white;
+}
+.add_to_cart button:focus{
+    outline: none;
+}
