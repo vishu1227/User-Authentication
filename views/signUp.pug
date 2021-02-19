@@ -2,9 +2,11 @@ doctype html
 head
   title Login
 form(action='/cart/signup' method='post')
-  input(type='email' name='' id='' placeholder='Enter your email')
+  input(type="text" name='name' placeholder='Enter your name' required='')
   br
-  input(type='password' name='' id='' placeholder='Enter password')
+  input(type='email' name='email' id='' placeholder='Enter your email' required='')
+  br
+  input(type='password' name='password' id='' placeholder='Enter password' required='')
   br
   button(type='submit') SignUp
-a(href='#') Login
+a(href='/cart/login') Login
