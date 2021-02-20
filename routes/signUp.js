@@ -1,5 +1,13 @@
 const route = require('express').Router();
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt'); 
+const { use } = require('passport');
+const passport=require('passport')
+
+const initializePassport=require('../passport-config')
+initializePassport(passport,email=>{
+    return users.find(user=> user.email === email)
+})
+
 const users = []
 
 route.get('/', (req, res) => {
